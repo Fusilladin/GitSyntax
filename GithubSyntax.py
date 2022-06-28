@@ -17,7 +17,7 @@ git config --global core.autocrlf true
 git config --help
 git config -h
 
-# Creating a gitrhub directory
+# Creating a github directory
 mkdir [name]
 cd [name] # moves to that folder
 cls # clears page
@@ -61,13 +61,15 @@ git remote set-url ssh://git@github.com/Fusilladin/demo-repo2.git
 ### ORDER OR OPERATIONS PUSHING:
 git init
 git status
+(create repo on website)
+git pull '[url].git'
 git add README.md // git add .
 git status
 git commit -m "Created README" -m "description"
 git remote add origin "[repo-url], '.git'"
 git -v
 git push -u origin master
-
+(change branch from main to master on Github)
 # branching
 
 git branch # shows all of the branches (*green=current)
@@ -92,9 +94,9 @@ git log # see all of your logs and descriptions
 git reset [commit hash] # undo commit by specific hash
 git reset --hard # unstage, remove changes
 
+# pull requests
 
-
-
+git pull '[url].git'# combination of fetch and merge
 
 
 
