@@ -63,20 +63,36 @@ git init
 git status
 (create repo on website)
 git pull '[url].git'
-git add README.md // git add .
+git add git add . // README.md
 git status
 git commit -m "Created README" -m "description"
 git remote add origin "[repo-url], '.git'"
 git -v
+git pull "url"
+git push -u origin master/[branch]
+
+#if not working create branch, push, pull into master, push
+git checkout -b [name]
+git push -u origin branch
+git checkout master
+git pull origin master --allow-unrelated-histories
+git merge origin master
 git push -u origin master
 (change branch from main to master on Github)
-# branching
 
+#### ORDER UPDATE
+git status
+git add .
+git commit -m "description"
+git push -u
+
+# branching
 git branch # shows all of the branches (*green=current)
 git checkout # used to switch between branches
 git checkout -b feature-readme-instructions # create a new branch
 git checkout master # switches to master branch
 git branch -d [name] # deletes the branch
+git pull origin master --allow-unrelated-histories # if pull/ then push not working, create a branch and then push it and then merge it into master and then git push -u origin master
 
 git diff "[branch-name]"
 git merge "[branch name]" # could do this to update the branch
