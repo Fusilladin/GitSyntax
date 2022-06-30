@@ -76,7 +76,7 @@ git checkout -b [name]
 git push -u origin branch
 git checkout master
 git pull origin master --allow-unrelated-histories
-git merge origin master
+
 git push -u origin master
 (change branch from main to master on Github)
 
