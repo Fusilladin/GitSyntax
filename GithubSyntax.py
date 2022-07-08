@@ -73,7 +73,7 @@ git push -u origin master/[branch]
 
 #if not working create branch, push, pull into master, push
 git checkout -b [name]
-git push -u origin branch
+git push -u origin [name]
 git checkout master
 git pull origin master --allow-unrelated-histories
 
@@ -89,7 +89,7 @@ git push -u
 # branching
 git branch # shows all of the branches (*green=current)
 git checkout # used to switch between branches
-git checkout -b feature-readme-instructions # create a new branch
+git checkout -b [name] # create a new branch
 git checkout master # switches to master branch
 git branch -d [name] # deletes the branch
 git pull origin master --allow-unrelated-histories # if pull/ then push not working, create a branch and then push it and then merge it into master and then git push -u origin master
@@ -114,6 +114,10 @@ git reset --hard # unstage, remove changes
 
 git pull '[url].git'# combination of fetch and merge
 
+
+# fix remote url
+
+git remote set-url origin '[url].git'
 
 
 
